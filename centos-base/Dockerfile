@@ -2,5 +2,5 @@ FROM centos:7.6.1810
 
 COPY Shanghai /etc/localtime
 
-RUN yum install -y vim net-tools telnet tcpdump \
+RUN yum install -y vim net-tools telnet tcpdump zip unzip \
     && yum clean all 
