@@ -5,4 +5,8 @@ ENV JAVA_VERSION=8u111 \
     JAVA_HOME=/opt/jdk$JAVA_VERSION_PREFIX \
     PATH=$JAVA_HOME/bin:$PATH
 
-RUN wget "https://mail-tp.fareoffice.com/java/jdk-$JAVA_VERSION-linux-x64.tar.gz" |tar -zx -C /opt/ 
+RUN cd /tmp && \
+    curl -L -O  -k "https://mail-tp.fareoffice.com/java/jdk-$JAVA_VERSION-linux-x64.tar.gz" && \
+    tar xf jdk-$JAVA_VERSION-linux-x64.tar.gz -C /opt && \
+    rm -f jdk-$JAVA_VERSION-linux-x64.tar.gz 
+
