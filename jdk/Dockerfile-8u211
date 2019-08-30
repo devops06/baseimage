@@ -1,7 +1,7 @@
 FROM registry.cn-hangzhou.aliyuncs.com/zhfang/centos-base:7.6.1810
 
-ENV JAVA_VERSION=8u211 \
-    JAVA_VERSION_PREFIX=1.8.0_211
+ENV JAVA_VERSION=8u221 \
+    JAVA_VERSION_PREFIX=1.8.0_221
 
 ENV JAVA_HOME=/opt/jdk$JAVA_VERSION_PREFIX
 ENV  PATH=$JAVA_HOME/bin:$PATH
