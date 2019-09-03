@@ -2,6 +2,7 @@
 hostPort: localhost:8061
 username: 
 password: 
+jmxUrl: service:jmx:rmi:///jndi/rmi://127.0.0.1:8061/jmxrmi
 
 rules:
 - pattern: ".*"
